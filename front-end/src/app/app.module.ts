@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import {
   ExtractFramesModule,
 } from './extract-frames';
+import {
+  TensorflowClassificationModule,
+} from './tensorflow-classification';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,7 @@ import {
     BrowserModule,
     AppRoutingModule,
     ExtractFramesModule,
+    TensorflowClassificationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
