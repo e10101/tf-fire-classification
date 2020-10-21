@@ -7,7 +7,7 @@ Please run docker command:
 docker pull e10101/tf-fire-classification
 ```
 
-## Find an image with fire
+## Find images with fire
 
 Please download some images (JPG format) with or without fire. For example:
 
@@ -69,6 +69,11 @@ For example:
 ```
 docker run --rm \
     -v '/tmp/fire-images/fire1.jpeg:/fire/image.jpg' \
+    e10101/tf-fire-classification \
+    /fire/image.jpg
+
+docker run --rm \
+    -v '/tmp/fire-images/no-fire1.jpg:/fire/image.jpg' \
     e10101/tf-fire-classification \
     /fire/image.jpg
 ```
